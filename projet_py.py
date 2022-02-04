@@ -50,6 +50,6 @@ if __name__=="__main__":
     spark = SparkSession.builder.master('local').appName("projet_py").getOrCreate()
     sc = spark.sparkContext
     n= 1000000
-    #pi_estimator_spark(n)
+    pi_estimator_spark(n)
     pi_estimator_numpy(n)
     spark.stop()
